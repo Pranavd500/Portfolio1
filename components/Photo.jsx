@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Photo = () => {
   return (
-    <div className="w-full h-full relative">
+    <div className="w-full% h-full% relative">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{
@@ -20,10 +20,10 @@ const Photo = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="w-[290px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten "
+          className="w-[10px] h-[8px] xl:w-[0px] xl:h-[0px] mix-blend-lighten "
         >
           <Image
-            src="/assets/work/pranav.png"
+            src="/assets/work/pranav2.png"
             priority
             quality={100}
             fill
@@ -34,17 +34,17 @@ const Photo = () => {
 
         {/*circle*/}
         <motion.svg
-          className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]"
+          className="w-[400px] xl:w-[356px] h-[400px] xl:h-[356px]"
           fill="transparent"
-          viewBox="0 0 506 506"
-          xmlns="http://www.w3.org/2000/svg"
+          viewBox="-50 -49 656 656"
+          xmlns="http://www.w3.org/TR/SVG"
         >
           <motion.circle
             cx="253"
             cy="253"
-            r="250"
+            r="300"
             stroke="#00ff99"
-            strokeWidth="4"
+            strokeWidth="5"
             strokeLinecap="round"
             strokeLinejoin="round"
             initial={{ strokeDasharray: "24 10 0 0" }}
