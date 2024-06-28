@@ -163,18 +163,18 @@ const resume = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[60vh] flex items-center justify-center py-12 xl:py-10"
     >
       <div className="containner mx-auto">
         <Tabs
           defaultValue="experience"
-          className="flex flex-col xl:flex-row gap=[60px]"
+          className="flex flex-col xl:flex-row gap=[10px]"
         >
-          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+          <TabsList className="flex flex-col w-full max-w-[160px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="education">Skills</TabsTrigger>
-            <TabsTrigger value="about">About Me1</TabsTrigger>
+            <TabsTrigger value="skill">Skills</TabsTrigger>
+            <TabsTrigger value="about">About Me</TabsTrigger>
           </TabsList>
           <div className="min-h-[70vh] w-full">
             <TabsContent value="experience" className="w-full">
@@ -239,14 +239,15 @@ const resume = () => {
               {/**/}
               skills
             </TabsContent>
+
             <TabsContent
               value="about"
               className="w-full text-center xl:text-left"
             >
               {/**/}
               <div className="flex flex-col gap-[30px]">
-                <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <h3 className="text-1xl font-extrabold">{about.title}</h3>
+                <p className="max-w-[900px] text-white/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
