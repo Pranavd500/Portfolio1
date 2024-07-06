@@ -14,18 +14,25 @@ const Home = () => {
               Hello I,m <br />
               <span className="text-accent">Pranav Desai</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
-              I excel in crafting elegant digital expiriences and i am
-              proficient in variuos programming languages and technologies.
+            <p className="max-w-[800px] mb-9 text-white/80">
+              a passionate software developer solving real-world problems. As a
+              cybersecurity enthusiast, I stay ahead of trends to ensure secure
+              software solutions. I’m also a creative UI designer focused on
+              user-friendly projects and enjoy brainstorming new startup ideas.
             </p>
-            <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
+            <div className="Button-accent flex flex-col xl:flex-row items-center gap-8">
+              <Button className="btn-outline lg uppercase flex items-center gap-2 hover:bg-accent hover:text-primary">
+                <a
+                  as="a"
+                  href="https://drive.google.com/file/d/15cMFTtOnsMyz1g67kuQrg9KIEPE4QiKj/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="outline"
+                  size="lg"
+                >
+                  <span>My Resume</span>
+                  <FiDownload className="text-xl" />
+                </a>
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social

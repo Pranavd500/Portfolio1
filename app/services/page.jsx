@@ -9,29 +9,29 @@ const Services = [
     num: "01",
     title: "Web Development",
     description:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-    href: "",
-  },
-  {
-    num: "01",
-    title: "Web Development",
-    description:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-    href: "",
+      "👋 Hi, I'm Pranav Desai, a web developer with 4+ years of experience. I specialize in building secure, user-friendly websites and web applications. Let's work together to bring your web projects to life!",
+    href: "https://github.com/Pranavd500",
   },
   {
     num: "02",
-    title: "Web Development",
+    title: "UI/UX Design",
     description:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-    href: "",
+      "👋 Hi, I'm Pranav Desai, a UI/UX designer with 2+ years of expertise in crafting intuitive digital experiences. Let's collaborate to create user-centric designs that captivate and engage!",
+    href: "https://www.notion.so/pranavdesai/Hi-I-m-Pranav-Desai-ff08727c12db4430afaec69e6bbb6f83",
   },
   {
-    num: "01",
-    title: "Web Development",
+    num: "03",
+    title: "Graphic Designer",
     description:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
-    href: "",
+      "👋 Hi, I'm Pranav Desai, a graphic designer with 2+ years of experience in visual storytelling and brand design. Let's collaborate to create captivating visuals that elevate your brand!",
+    href: "https://www.behance.net/pranavdesai4",
+  },
+  {
+    num: "04",
+    title: "Tradional Art Artist",
+    description:
+      "👋 Hi, I'm Pranav Desai, a skilled traditional artist adept at portraits, sketches, and character design. Let's create expressive and personalized artwork together!",
+    href: "https://www.instagram.com/pranav_d500/",
   },
 ];
 
@@ -57,12 +57,18 @@ const services = () => {
                   <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
                     {service.num}
                   </div>
-                  <Link
+                  <a
                     href={service.href}
-                    className="w-[70px] rounded-full bg-white group-hover:bg-accent transition-all durationn-500 flex justify-center items-center hover:-rotate-45"
+                    className="w-[70px] rounded-full bg-white flex justify-center items-center hover:bg-accent transition-all duration-500"
                   >
-                    <BsArrowDownRight className="text-primary text-3xl" />
-                  </Link>
+                    <Link
+                      href={service.href}
+                      className="w-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
+                      style={{ backgroundColor: "white" }} // Add this line if necessary
+                    >
+                      <BsArrowDownRight className="text-primary text-3xl" />
+                    </Link>
+                  </a>
                 </div>
                 <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
                   {service.title}

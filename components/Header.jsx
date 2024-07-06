@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import Nav from "./Nav";
-import { Contact } from "lucide-react";
+import { contact } from "lucide-react";
 import MobileNav from "./MobileNav";
 const Header = () => {
   return (
