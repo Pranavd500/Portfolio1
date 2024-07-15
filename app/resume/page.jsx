@@ -218,6 +218,11 @@ const BucketList = {
       name: "29",
       completed: false,
     },
+    {
+      description: "Want to be funny ofc(plz)",
+      name: "30",
+      completed: false,
+    },
   ],
 };
 
